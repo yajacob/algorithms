@@ -109,6 +109,7 @@ def display(tree):
     print(tree.data, end=' ')
     display(tree.right)
 
+"""
 bt = BTree(25)
 add(bt, 10)
 add(bt, 13)
@@ -123,5 +124,18 @@ remove(bt, 23)
 display(bt)
 
 print("\nheight:" + str(findHeight(bt)))
+"""
+
+#**********************************
+def bstDistance(values, n, node1, node2):
+    bt = BTree(values[0])
+    for i in range(len(values)):
+        if i == 0: continue
+        print(values[i])
+        add(bt, values[i])
+    
+values = [5,6,3,1,2,4]
+bstDistance(values, 6, 2, 4)
+
 
 
